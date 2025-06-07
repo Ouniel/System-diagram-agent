@@ -116,8 +116,7 @@ sequenceDiagram
 ### 📦 安装依赖
 
 ```bash
-# 克隆项目
-git clone <repository-url>
+
 cd system-diagram-agent
 
 # 安装依赖
@@ -128,12 +127,6 @@ cp env.example .env
 # 编辑 .env 文件，设置您的 DEEPSEEK_API_KEY
 ```
 
-### ⚡ 快速启动
-
-```bash
-# 运行快速启动脚本
-python quick_start.py
-```
 
 ### 🎮 使用方式
 
@@ -294,38 +287,6 @@ class CustomAgent(BaseAgent):
         return self.format_output(result)
 ```
 
-## 🚀 部署指南
-
-### 🐳 Docker部署
-
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 5000
-CMD ["python", "main.py", "web", "--host", "0.0.0.0"]
-```
-
-### ☁️ 云平台部署
-
-支持部署到：
-- AWS EC2
-- Google Cloud Platform
-- Azure
-- 阿里云
-- 腾讯云
-
-详细部署说明请参考 [DEPLOYMENT.md](DEPLOYMENT.md)
-
-## 🤝 贡献指南
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
 
 ## 📄 许可证
 
@@ -337,19 +298,3 @@ CMD ["python", "main.py", "web", "--host", "0.0.0.0"]
 - [Mermaid](https://mermaid-js.github.io/) - 优秀的图表渲染引擎
 - [Flask](https://flask.palletsprojects.com/) - 轻量级Web框架
 - [Rich](https://rich.readthedocs.io/) - 美观的终端输出
-
-## 📞 联系我们
-
-- 📧 Email: your-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/your-repo/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/your-repo/discussions)
-
----
-
-<div align="center">
-
-**🌟 如果这个项目对您有帮助，请给我们一个星标！**
-
-Made with ❤️ by [Your Name]
-
-</div> 
